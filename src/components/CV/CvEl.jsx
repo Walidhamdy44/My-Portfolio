@@ -8,8 +8,8 @@ const CvEl = () => {
         <button className="custom-btn btn-cv">
           <span>
             <a
-              download="Walid_Hamdy-FrontEnd(React)-Cv"
-              href="FrontEnd React-Walid Hamdy-CV.pdf"
+              download="walid-hamdy-Frontend-Next.cv"
+              href="walid-hamdy-Frontend-Next.cv.pdf"
             >
               Download !
             </a>
