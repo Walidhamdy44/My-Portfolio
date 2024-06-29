@@ -1,12 +1,12 @@
 .dark {
-  --primary: #000;
-  --main-bg-color: #18181b;
-  --border: rgba(63, 63, 70, 0.4);
-  --title: rgb(244 244 245);
-  --subtitle: #2f2f32;
-  --gray-alt: #777;
-  --blue: rgb(93, 188, 252);
-  --gray: #252529;
+  --primary: #0d1117; /* Darker primary color */
+  --main-bg-color: #161b22; /* Dark background color */
+  --border: rgba(240, 246, 252, 0.1); /* Soft border color */
+  --title: #c9d1d9; /* Light text color */
+  --subtitle: #8b949e; /* Grayish subtitle */
+  --gray-alt: #484f58; /* Alternative gray */
+  --blue: #58a6ff; /* Vivid blue for highlights */
+  --gray: #21262d; /* Background gray */
   --container-padding: 4.8rem;
 }
 

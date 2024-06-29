@@ -141,9 +141,61 @@ import s7 from "../images/Allimages/17/7.png";
 import s8 from "../images/Allimages/17/8.png";
 import s9 from "../images/Allimages/17/9.png";
 
+//
+import t1 from "../images/Allimages/18/1.png";
+import t2 from "../images/Allimages/18/2.png";
+import t3 from "../images/Allimages/18/3.png";
+import t4 from "../images/Allimages/18/4.png";
+import t5 from "../images/Allimages/18/5.png";
+import t6 from "../images/Allimages/18/6.png";
+import t7 from "../images/Allimages/18/7.png";
+import t8 from "../images/Allimages/18/8.png";
+import t9 from "../images/Allimages/18/9.png";
+import t10 from "../images/Allimages/18/10.png";
+import t11 from "../images/Allimages/18/11.png";
+import t12 from "../images/Allimages/18/12.png";
+import t13 from "../images/Allimages/18/13.png";
+import t14 from "../images/Allimages/18/14.png";
+import t15 from "../images/Allimages/18/15.png";
+
+import t from "../images/Cover/14.png";
+
 const data = [
   {
     id: 1,
+    title: "LMS Platform",
+    desc: "Full Stack Learning Management System (LMS) using Next js in the front Key Features:- Browse & Filter Courses- Purchase Courses using Stripe- Mark Chapters as Completed or Uncompleted- Progress Calculation of each Course- Student Dashboard- Teacher mode- Create new Courses- Create new Chapters- Easily reorder chapter position with drag n’ drop- Upload thumbnails, attachments and videos using UploadThing- Video processing using Mux- HLS Video player using Mux- Rich text editor for chapter description- Authentication using Clerk- ORM using Prisma- MongoDb database",
+    coverimg: t,
+    images: [t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15],
+    skills: [
+      "Next ja",
+      "Prisma",
+      "Api",
+      "Providers",
+      "Context",
+      "App Router",
+      "SSR",
+      "Taillwind Css",
+      "ShadCn",
+      "axios",
+      "Full Responsive",
+      "TypeScript",
+      "MongoDB For BackEnd Server",
+      "Google Auth",
+      "Github Auth",
+      "Clerk",
+      "Microsoft Auth",
+      "Stripe",
+      "ORM using Prisma",
+      "Mux",
+      "UploadThing",
+    ],
+    demo: "https://courses-platform-next.vercel.app/",
+    github: "https://github.com/Walidhamdy44/Courses_PlatForm_Next",
+    catagory: ["react", "api", "sass", "all", "full"],
+  },
+  {
+    id: 2,
     title: "Full Stack Ecommerce Next Js",
     desc: "Full Stack App using Next js in the front and using Strapi in the backend in this project we can do the most features of any big ecommerce we have fillteration and authantication using google account or github account and microsoft , and we have a ssr >> Server Side Rendering support and more more features you can see that in the website",
     coverimg: r13,
@@ -173,7 +225,7 @@ const data = [
     catagory: ["react", "api", "sass", "all", "full"],
   },
   {
-    id: 2,
+    id: 3,
     title: "Full Stack Blog Next Js",
     desc: "Full Stack App using Next js in the front and using Prisma And MongoDb in the backend in this project , the user can add any Post and Read All Posts , user can add comment in post we have fillteration we have authantication using google account or github account and microsoft , and we have a ssr >> Server Side Rendering support and more more features you can see that in the website",
     coverimg: s9,
@@ -201,7 +253,7 @@ const data = [
     catagory: ["react", "api", "sass", "all", "full"],
   },
   {
-    id: 3,
+    id: 4,
     title: "Full Ecomerce App (React Js)",
     desc: "Full Ecomerce app have 14 page ,With Back end",
     coverimg: i13,
@@ -241,7 +293,7 @@ const data = [
     catagory: ["react", "api", "sass", "all", "full"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Car x App (Next Js)",
     desc: "Car X is a next js application using extrrnal api ",
     coverimg: p11,
@@ -265,7 +317,7 @@ const data = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: "Zoom Clone App (Next js)",
     desc: "using next Zoom Clone app using next js and server action i use >> clerck shadCn Ui Taillwind css React GetStreem for viedo calling and audio -- >",
     coverimg: o2,
@@ -288,7 +340,7 @@ const data = [
     catagory: ["react", "api", "sass", "all", "next"],
   },
   {
-    id: 6,
+    id: 7,
     title: "anime infinty scroll app",
     desc: "Build Modern Next 14 Server Side App with Server Actions, Infinite Scroll & Framer Motion Animations ",
     coverimg: q2,
@@ -308,7 +360,7 @@ const data = [
     catagory: ["react", "api", "all", "next"],
   },
   {
-    id: 7,
+    id: 8,
     title: "Helex Website",
     desc: "My faviorite Website Used JS and Some Plugin , i used sass with js  Owl COursoul ScrollReavel",
     coverimg: i12,
@@ -327,7 +379,7 @@ const data = [
     catagory: ["css", "js", "sass", "all"],
   },
   {
-    id: 8,
+    id: 9,
     title: "Ecomerce_Front",
     desc: "Ecomerce App By SCss ( Sass ) Js , Bootstrap Only Front End >> HTML CSS JAVASCRIPT SASS (SCSS) BOOTSTRAP LIBERARY OWL CARSOL",
     coverimg: i4,
@@ -345,7 +397,7 @@ const data = [
     catagory: ["css", "js", "sass", "all"],
   },
   {
-    id: 9,
+    id: 10,
     title: "DigiMedia Website",
     desc: "The website inculd the DarkMood and Some New Fureture,The Website Have Page For Login And Regrest,Design by Java script and Css and Html",
     coverimg: i6,
@@ -356,7 +408,7 @@ const data = [
     catagory: ["css", "js", "sass", "all"],
   },
   {
-    id: 10,
+    id: 11,
     title: "Dashbord design",
     desc: "dashbord design using Html and Css and SweetAlert the website have 7 pages (All Are Responsive)",
     coverimg: i7,
@@ -367,7 +419,7 @@ const data = [
     catagory: ["css", "js", "all"],
   },
   {
-    id: 11,
+    id: 12,
     title: "My First JS Design",
     desc: "The First Website I used JavaScript With Eng.OsamaElzero ",
     coverimg: i5,
@@ -379,7 +431,7 @@ const data = [
     catagory: ["css", "js", "all"],
   },
   {
-    id: 12,
+    id: 13,
     title: "PhotoGrapher Website",
     desc: "website for photographer design by Html and css responsive for all size",
     coverimg: i11,
@@ -390,7 +442,7 @@ const data = [
     catagory: ["css", "js", "all"],
   },
   {
-    id: 13,
+    id: 14,
     title: "Movies Api With React",
     desc: "Using api we made a website have all movies ,i used the redux and routing",
     coverimg: i2,
@@ -409,7 +461,7 @@ const data = [
     catagory: ["react", "api", "sass", "all"],
   },
   {
-    id: 14,
+    id: 15,
     title: "Restaurant with React",
     desc: "Using React To create this project",
     coverimg: i1,
@@ -420,7 +472,7 @@ const data = [
     catagory: ["react", "sass", "all"],
   },
   {
-    id: 15,
+    id: 16,
     title: "Responsive Website Useing Html And Css",
     desc: "responsive web design by css html",
     coverimg: i9,
@@ -431,7 +483,7 @@ const data = [
     catagory: ["css", "all"],
   },
   {
-    id: 16,
+    id: 17,
     title: "Website Using Html Css",
     desc: "templet two for responsive design by using html and css from elzero web school",
     coverimg: i8,
@@ -442,7 +494,7 @@ const data = [
     catagory: ["css", "all"],
   },
   {
-    id: 17,
+    id: 18,
     title: "Store With Html And Css",
     desc: "store design responsive css html",
     coverimg: i10,
@@ -453,7 +505,7 @@ const data = [
     catagory: ["css", "all"],
   },
   {
-    id: 18,
+    id: 19,
     title: "Website Using Html Css",
     desc: "Website Using Html Css First Website  from elzeroWebshcool ",
     coverimg: i3,

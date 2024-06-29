@@ -26,6 +26,17 @@ const AboutText = () => {
           <span>Java Script</span>,<span>Sass</span>,<span>ES7</span>,
           <span>Git</span>,<span>Command Line</span>,<span>React</span>,
           <span>React Readux</span>,<span>Redux ToolKit</span>,
+          <span>Next js</span>,<span>Prisma</span>,<span>MongoDB</span>,
+          <span>Axios</span>,<span>Stripe</span>,<span>Strapi</span>,
+          <span>Node js</span>,<span>Express Js</span>,
+          <span>Server Side Rendering (SSR)</span>,<span>CSR</span>,
+          <span>Verciel</span>,<span>Cors</span>,
+          <span>API and Testing Tools</span>,<span>Npm</span>,
+          <span>Bootstrap</span>,<span>Website Testing Tools</span>,
+          <span>Tailwaind Css</span>,<span>MUI</span>,<span>GSAP</span>,
+          <span>ShadCn</span>,<span>Framer Motion</span>,
+          <span>Authantication</span>
+          <span>Clerck</span>,<span>Next Auth</span>
         </p>
       </div>
     </div>
