@@ -4,8 +4,9 @@ import toast, { Toaster } from "react-hot-toast";
 import { Link } from "react-router-dom";
 //
 const ProjectsItem = ({ myData }) => {
-  // func for links -->
+  // func for links -
 
+  // vaildate the url
   const valid = (e) => {
     if (e.target.href === "") {
       toast.error("The Code Under Review !");
@@ -19,6 +20,7 @@ const ProjectsItem = ({ myData }) => {
           <motion.div
             key={index}
             className="box"
+            id="box"
             layout
             initial={{ transform: "scale(0)" }}
             animate={{ transform: "scale(1)" }}
