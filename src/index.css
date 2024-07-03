@@ -1,6 +1,6 @@
 .dark {
-  --primary: #0d1117; /* Darker primary color */
-  --main-bg-color: #161b22; /* Dark background color */
+  --primary: #000000; /* Darker primary color */
+  --main-bg-color: #000000; /* Dark background color */
   --border: rgba(240, 246, 252, 0.1); /* Soft border color */
   --title: #c9d1d9; /* Light text color */
   --subtitle: #8b949e; /* Grayish subtitle */
@@ -31,6 +31,11 @@ a {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
+}
+::selection {
+  background-color: var(--blue); /* Background color for selected text */
+  color: var(--title); /* Text color for selected text */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for selection */
 }
 
 html {
@@ -207,6 +212,7 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 20px;
+  margin-top: 30px;
 }
 @media (max-width: 991px) {
   .footer {
@@ -366,7 +372,8 @@ body {
   height: fit-content;
   width: 90%;
   padding: 20px 30px;
-  background-color: var(--gray);
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect to create glass-like appearance */
 }
 .header .menu-modul .menu-links li {
   padding: 10px 0px;
@@ -874,6 +881,15 @@ body {
   .item-container .box .text h3 {
     font-size: 18px;
   }
+  .item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .item-container .box {
+    width: 117%;
+  }
 }
 .item-container .box .text p {
   font-size: 15px;
@@ -926,10 +942,10 @@ body {
   transition: 0.4s;
 }
 .btn-link:hover {
-  color: var(--blue);
   border: 1px solid var(--blue);
   -webkit-box-shadow: rgba(139, 138, 138, 0.2) 0px 2px 8px 0px;
   box-shadow: rgba(139, 138, 138, 0.2) 0px 2px 8px 0px;
+  color: #35c4f0;
 }
 
 .details {
@@ -1442,3 +1458,19 @@ body {
   left: 0;
 }
 /*# sourceMappingURL=index.css.map */
+.video p {
+  position: absolute;
+  font-size: 47px;
+  font-weight: 500;
+  color: rgba(208, 186, 186, 0.557);
+  margin-bottom: 20px;
+  z-index: 200;
+  font-family: "FontAwesome";
+  letter-spacing: 2px;
+}
+@media (max-width: 767px) {
+  .video p {
+    font-size: 23px;
+    text-align: center;
+  }
+}
