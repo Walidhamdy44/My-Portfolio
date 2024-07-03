@@ -37,7 +37,7 @@ const ProjectsFilter = ({ searchKey }) => {
         }}
         className={clicked === "js" ? "active" : null}
       >
-        HTML & CSS & JS 🌊
+        & JS 🌊
       </AwesomeButton>
       <AwesomeButton
         type=""
@@ -47,7 +47,7 @@ const ProjectsFilter = ({ searchKey }) => {
         }}
         className={clicked === "sass" ? "active" : null}
       >
-        HTML & SASS & JS ⚡
+        & SASS⚡
       </AwesomeButton>
       <AwesomeButton
         type=""
@@ -57,7 +57,7 @@ const ProjectsFilter = ({ searchKey }) => {
         }}
         className={clicked === "react" ? "active" : null}
       >
-        REACT & BootStrap 🐱‍👤
+        REACT ✨
       </AwesomeButton>
       <AwesomeButton
         type=""
@@ -67,7 +67,7 @@ const ProjectsFilter = ({ searchKey }) => {
         }}
         className={clicked === "api" ? "active" : null}
       >
-        REACT & BackEnd (Api) 🐱‍🏍
+        REACT & BackEnd (Api) 🤸‍♂️
       </AwesomeButton>
       <AwesomeButton
         type=""
