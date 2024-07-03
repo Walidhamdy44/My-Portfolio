@@ -1,5 +1,6 @@
 import HeroSec from "../components/Home/HeroSec";
 import Skills from "../components/Home/Skills";
+import VodeoSec from "../components/Home/VodeoSec";
 import FooterEl from "../components/Layout/FooterEl";
 import HeaderNav from "../components/Layout/HeaderNav";
 import LoadingAnimation from "../components/Layout/LoadingAnimation";
@@ -23,6 +24,7 @@ const HomePage = () => {
           <HeaderNav />
           <HeroSec />
           <Skills />
+          <VodeoSec />
           <FooterEl />
         </div>
       )}
