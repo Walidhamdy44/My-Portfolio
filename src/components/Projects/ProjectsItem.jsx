@@ -31,6 +31,10 @@ const ProjectsItem = ({ myData }) => {
               damping: 8,
             }}
             exit={{ transform: "scale(0)" }}
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)",
+            }}
           >
             <div className="img">
               <Link to={`/project/${item.id}`}>
