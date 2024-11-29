@@ -1,6 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-awesome-button/dist/styles.css";
+import "primereact/resources/themes/lara-light-cyan/theme.css";
 import { Container } from "react-bootstrap";
+import { PrimeReactProvider } from "primereact/api";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
@@ -18,16 +20,18 @@ function App() {
           <img alt="whatsapp" src="/whatsapp.png" />
         </a>
       </div>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/project/:id" element={<ProjectDetail />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/cv" element={<CvPage />} />
-        </Routes>
-      </BrowserRouter>
+      <PrimeReactProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/project/:id" element={<ProjectDetail />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/cv" element={<CvPage />} />
+          </Routes>
+        </BrowserRouter>
+      </PrimeReactProvider>
     </Container>
   );
 }

@@ -556,7 +556,22 @@ body {
   color: var(--gray-alt);
   margin: 20px 0;
   width: 67%;
+  background: linear-gradient(90deg, #ffffff, #2dd4bf, #ffffff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: illuminate 3s ease-in-out infinite;
 }
+
+@keyframes illuminate {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
 @media (max-width: 991px) {
   .hero .text p {
     width: 100%;
