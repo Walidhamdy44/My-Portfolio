@@ -75,7 +75,7 @@ const HeaderNav = () => {
       window.location.pathname === "" ? null : (
         <div className="logo">
           <Link to="/">
-            <img alt="jj" src="me2.png" />
+            <img alt="jj" src="/me2.png" />
           </Link>
         </div>
       )}

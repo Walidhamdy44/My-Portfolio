@@ -1,14 +1,23 @@
+import React, { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import data from "../../logic/data";
 import { useParams } from "react-router-dom";
+import { Dialog } from "primereact/dialog";
 
 const ProductDetails = () => {
   const { id } = useParams();
+  const [visible, setVisible] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const valid = (e) => {
     if (e.target.href === "") {
       toast.error("The Code Under Review !");
     }
+  };
+
+  const openDialog = (image) => {
+    setSelectedImage(image);
+    setVisible(true);
   };
 
   return (
@@ -42,7 +51,7 @@ const ProductDetails = () => {
         <div className="images">
           {data[id - 1].images.map((item, index) => {
             return (
-              <div key={index} className="img">
+              <div key={index} className="img" onClick={() => openDialog(item)}>
                 <img alt="img1" src={item} />
               </div>
             );
@@ -68,6 +77,16 @@ const ProductDetails = () => {
         </a>
       </div>
       <Toaster />
+      <Dialog
+        header="Image Preview"
+        visible={visible}
+        style={{ width: "90vw" }}
+        onHide={() => setVisible(false)}
+      >
+        {selectedImage && (
+          <img src={selectedImage} alt="Selected" style={{ width: "100%" }} />
+        )}
+      </Dialog>
     </div>
   );
 };
