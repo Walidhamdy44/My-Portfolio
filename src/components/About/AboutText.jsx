@@ -13,14 +13,14 @@ const AboutText = () => {
         </p>
       </div>
       <div>
-        <p>Faculty of Science, Minya University. (2020 - 2024)</p>
+        <p>Faculty of Science, Minya University. (2019 - 2023)</p>
         <p>
           In the second grade, I joined the Computer Science department because
           ever since I was young, I had aspired to become a programmer.
         </p>
       </div>
       <div>
-        <p>I began learning programming in 2022.</p>
+        <p>I began learning programming in 2018.</p>
         <p>
           started With : <span>Html</span>,<span>Css</span>,
           <span>Java Script</span>,<span>Sass</span>,<span>ES7</span>,
