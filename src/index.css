@@ -414,6 +414,8 @@ body {
 
 .logo img {
   width: 55px;
+  height: 55px;
+  border-radius: 50%;
 }
 
 .active {
@@ -644,9 +646,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px;
   padding-bottom: 70px;
-  gap: 20px;
+  gap: 60px;
   border-bottom: 1px solid var(--border);
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -780,6 +781,345 @@ body {
 }
 .about .img .mail a:hover {
   color: var(--blue);
+}
+
+/* Enhanced About Page Styles */
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--title);
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, var(--blue), #58a6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-header h2 {
+  font-size: 1.5rem;
+  color: var(--subtitle);
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+@media (max-width: 991px) {
+  .image {
+    margin: auto;
+  }
+}
+.about-header .summary {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--subtitle);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--border);
+  background: transparent;
+  color: var(--subtitle);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.tab-btn:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+  transform: translateY(-2px);
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, var(--blue), #58a6ff);
+  border-color: var(--blue);
+  color: white;
+}
+
+.tab-content {
+  min-height: 400px;
+}
+
+/* About Section Styles */
+.about-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.personal-info,
+.education {
+  margin-bottom: 2.5rem;
+}
+
+.personal-info h3,
+.education h3 {
+  font-size: 1.8rem;
+  color: var(--title);
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.personal-info h3::before,
+.education h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 25px;
+  background: var(--blue);
+  border-radius: 2px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.info-item {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.info-item:hover {
+  border-color: var(--blue);
+  transform: translateY(-2px);
+}
+
+.info-item strong {
+  color: var(--blue);
+  margin-right: 0.5rem;
+}
+
+.education p {
+  line-height: 1.8;
+  color: var(--subtitle);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* Timeline Styles */
+.timeline-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--border);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 2rem;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -1.5rem;
+  top: 0.5rem;
+  width: 12px;
+  height: 12px;
+  background: var(--blue);
+  border-radius: 50%;
+  border: 3px solid var(--primary);
+  z-index: 2;
+}
+
+.timeline-content {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  border-color: var(--blue);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-year {
+  display: inline-block;
+  background: var(--blue);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.timeline-title {
+  font-size: 1.3rem;
+  color: var(--title);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.timeline-company {
+  color: var(--blue);
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.timeline-description {
+  color: var(--subtitle);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.timeline-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background: rgba(88, 166, 255, 0.1);
+  color: var(--blue);
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  border: 1px solid rgba(88, 166, 255, 0.3);
+}
+
+/* Skills Section Styles */
+.skills-section {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.skill-category {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+  border-color: var(--blue);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.skill-category h4 {
+  color: var(--blue);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.skill-item {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--title);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  background: var(--blue);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .about-tabs {
+    gap: 0.5rem;
+  }
+
+  .tab-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .timeline {
+    padding-left: 1rem;
+  }
+
+  .timeline-item {
+    padding-left: 1rem;
+  }
+
+  .timeline-marker {
+    left: -0.75rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .filter {
@@ -1488,5 +1828,109 @@ body {
   .video p {
     font-size: 23px;
     text-align: center;
+  }
+}
+
+/* Phone number copy functionality */
+.phone-number {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease infinite;
+  color: white;
+  font-weight: 500;
+}
+
+.phone-number:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  background-position: right center;
+}
+
+.phone-number:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(102, 126, 234, 0.3);
+}
+
+.phone-number.copied {
+  background: linear-gradient(45deg, #4ade80 0%, #22c55e 100%);
+  animation: successPulse 0.6s ease;
+}
+
+.copy-feedback {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #22c55e;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+  animation: fadeInUp 0.3s ease;
+  z-index: 10;
+}
+
+.copy-feedback::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid transparent;
+  border-top-color: #22c55e;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes successPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .phone-number {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .copy-feedback {
+    font-size: 0.7rem;
+    top: -25px;
   }
 }

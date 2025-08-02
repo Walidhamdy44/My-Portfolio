@@ -64,9 +64,10 @@ const HeroSec = () => {
                 Front End React Developer<span>" NEXT JS "</span>
               </div>
               <p>
-                I’m Walid, a Front End Developer with +3.5 years of experience in
-                website design and front-end development. I utilize the latest technologies
-                in my work to ensure high performance and speed for your projects.
+                I’m Walid, a Front End Developer with +3.5 years of experience
+                in website design and front-end development. I utilize the
+                latest technologies in my work to ensure high performance and
+                speed for your projects.
               </p>
             </div>
           </div>
