@@ -1,6 +1,9 @@
 import HeroSec from "../components/Home/HeroSec";
 import Skills from "../components/Home/Skills";
 import VodeoSec from "../components/Home/VodeoSec";
+import FeaturedProjects from "../components/Home/FeaturedProjects";
+import Statistics from "../components/Home/Statistics";
+import Services from "../components/Home/Services";
 import FooterEl from "../components/Layout/FooterEl";
 import HeaderNav from "../components/Layout/HeaderNav";
 import LoadingAnimation from "../components/Layout/LoadingAnimation";
@@ -23,8 +26,11 @@ const HomePage = () => {
         <div>
           <HeaderNav />
           <HeroSec />
+          <Statistics />
+          <Services />
           <Skills />
-          <VodeoSec />
+          <FeaturedProjects />
+          {/* <VodeoSec /> */}
           <FooterEl />
         </div>
       )}
