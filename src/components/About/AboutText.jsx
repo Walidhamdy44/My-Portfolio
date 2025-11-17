@@ -16,7 +16,22 @@ const AboutText = () => {
 
   const timelineData = [
     {
-      year: "2024 - Present",
+      year: "Nov 2025 - Present",
+      title: "Senior Front-End Developer",
+      company: "Boutiqaat - Cairo, Egypt (onsite)",
+      description:
+        "Leading the migration of the e-commerce experience to Next.js, modernizing the design system, and improving Core Web Vitals. Partnering closely with marketing to launch high-converting landing pages and localized experiences across the GCC.",
+      skills: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Design Systems",
+        "Performance",
+        "A/B Testing",
+      ],
+    },
+    {
+      year: "2024 - Nov 2025",
       title: "Front-End Developer & SEO Specialist",
       company: "Skyloov Property Portal - UAE, Dubai",
       description:
@@ -31,7 +46,7 @@ const AboutText = () => {
       ],
     },
     {
-      year: "2023 - 2024",
+      year: "2023 - Jan 2024",
       title: "Front-End Developer",
       company: "MeetUs-VR",
       description:
